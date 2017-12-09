@@ -12,8 +12,8 @@ class Song
     name = file_name.split(" - ")[0]
     @new_song = Song.new(song_name)
     artist_name=(name)
-    @new_song
     binding.pry
+    @new_song
   end
 
   def artist_name=(name)
