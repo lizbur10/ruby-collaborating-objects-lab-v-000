@@ -7,4 +7,12 @@ class Song
     @name = name
   end
 
+  def self.new_by_filename(file_name)
+    artist_name = file_name.parse(" - ")
+  end
+
+  def artist_name=(name)
+
+  end
+
 end
