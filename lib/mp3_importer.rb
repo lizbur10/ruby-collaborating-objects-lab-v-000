@@ -14,7 +14,7 @@ class MP3Importer
 
   def import
     #calls Song.new_by_filename which creates the song from the filename
-    @files.each { | file_name | Song.new_by_filename(file_name)}
+    self.files.each { | file_name | Song.new_by_filename(file_name)}
   end
 
 end
