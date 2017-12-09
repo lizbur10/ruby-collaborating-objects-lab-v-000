@@ -5,14 +5,14 @@ class MP3Importer
     @path = path
   end
 
-  def files(path)
+  def files
     #load the files in the directory indicated by the path
-    Dir["#{path}/*.mp3"]
+    Dir["#{@path}/*.mp3"]
     binding.pry
     #normalizes the filename (removes the path)
   end
 
-  def import(file_name)
+  def import
     #calls Song.new_by_filename which creates the song from the filename
     Song.new_by_filename(file_name)
   end
