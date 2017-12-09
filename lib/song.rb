@@ -21,8 +21,3 @@ class Song
   end
 
 end
-
-
-
-# @artist.add_song(new_song)
-# @new_song.artist = @artist
