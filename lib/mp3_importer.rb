@@ -8,7 +8,6 @@ class MP3Importer
   def files
     #load the files in the directory indicated by the path
     Dir["#{@path}/*.mp3"]
-    binding.pry
     #normalizes the filename (removes the path)
   end
 
