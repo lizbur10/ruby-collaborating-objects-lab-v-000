@@ -1,6 +1,6 @@
 require 'pry'
 class Song
-  attr_accessor :name, :artist #, :song
+  attr_accessor :name, :artist, :new-song
   # attr_reader :artist_name
 
   def initialize(name)
@@ -11,7 +11,7 @@ class Song
     new_song_name = file_name.split(" - ")[1]
     new_artist_name = file_name.split(" - ")[0]
     @new_song = Song.new(song_name)
-    artist_name=(name)
+    artist_name=(new_artist_name)
     @new_song
   end
 
