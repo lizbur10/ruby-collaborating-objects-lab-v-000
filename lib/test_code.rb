@@ -1,5 +1,6 @@
 
 michael = Artist.new('Michael Jackson')
+michael.save
 michael_song_one = Song.new("Rock With You")
 michael.add_song(michael_song_one)
 michael_song_two = Song.new("Smooth Criminal")
