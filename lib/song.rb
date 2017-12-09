@@ -13,12 +13,14 @@ class Song
     @new_song = Song.new(song_name)
     artist_name=(name)
     @new_song
+    binding.pry
   end
 
   def artist_name=(name)
     @artist = Artist.find_or_create_by_name(name)
     @artist.add_song(new_song)
     @new_song.artist = @artist
+    binding.pry
   end
 
 end
