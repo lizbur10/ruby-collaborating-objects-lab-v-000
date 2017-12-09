@@ -19,11 +19,21 @@ end
 
 
 artist = Artist.new('Michael Jackson')
-song_one = Song.new("Rock With You")
-song_two = Song.new("Smooth Criminal")
+michael_song_one = Song.new("Rock With You")
+artist.add_song(song_one)
+michael_song_two = Song.new("Smooth Criminal")
+artist.add_song(song_two)
+
+artist = Artist.new('Adele')
+adele_song_one = Song.new("hello")
+artist.add_song(adele_song_one)
+adele_song_two = Song.new("")
+artist.add_song(adele_song_two)
+
+
 artist_1 = Artist.find_or_create_by_name("Michael Jackson")
 artist_2 = Artist.find_or_create_by_name("Michael Jackson")
-artist_1 = Artist.find_or_create_by_name("Drake")
+artist_3 = Artist.find_or_create_by_name("Drake")
 dirty_diana = Song.new("Dirty Diana")
 billie_jean = Song.new("Billie Jean")
 artist.add_song(dirty_diana)
