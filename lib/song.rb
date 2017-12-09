@@ -20,6 +20,7 @@ class Song
     @artist = Artist.find_or_create_by_name(name)
     @artist.add_song(new_song)
     @new_song.artist = @artist
+    @artist
   end
 
 end
