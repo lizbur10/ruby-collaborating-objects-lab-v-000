@@ -25,7 +25,9 @@ class Artist
   end
 
   def self.create_by_name(name)
-    self.new(name).tap.save
+    new_song = self.new(name)
+    new_song.save
+    new_song
   end
 
   def self.find_or_create_by_name(name)
