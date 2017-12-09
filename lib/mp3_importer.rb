@@ -7,8 +7,9 @@ class MP3Importer
 
   def files
     #load the files in the directory indicated by the path
-    Dir["#{@path}/*.mp3"]
+    files = Dir["#{@path}/*.mp3"]
     #normalizes the filename (removes the path)
+    files.map { | file | file.gsub("#{path}/", "") }
   end
 
   def import
