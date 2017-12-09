@@ -6,6 +6,7 @@ class MP3Importer
   end
 
   def files(path)
+    Dir["#{path}/*.mp3"]
     #load the files in the directory indicated by the path
     #normalizes the filename (removes the path)
   end
